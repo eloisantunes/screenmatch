@@ -4,11 +4,12 @@ public class Principal {
     public static void main(String[] args) {
 
         Filme meuFilme = new Filme();
-        meuFilme.titulo = "Titanic";
-        meuFilme.anoDeLancamento = 1989;
-        meuFilme.duracaoEmMinutos = 190;
+        meuFilme.setTitulo("Titanic");
+        meuFilme.setAnoDeLancamento(1989);
+        meuFilme.setDuracaoEmMinutos(190);
 
         meuFilme.exibeFichaTecnica();
+
         meuFilme.avalia(8);
         meuFilme.avalia(6);
         meuFilme.avalia(9);
