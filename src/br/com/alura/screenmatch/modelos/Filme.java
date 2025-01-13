@@ -2,28 +2,28 @@ package br.com.alura.screenmatch.modelos;
 
 public class Filme {
 
-    String titulo;
+    public String titulo;
     int anoDeLancamento;
     boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
     private int totalDeAvaliacoes;
     int duracaoEmMinutos;
 
-    int getTotalDeAvaliacoes() {
+    public int getTotalDeAvaliacoes() {
         return totalDeAvaliacoes;
     }
 
-    void exibeFichaTecnica() {
+    public void exibeFichaTecnica() {
         System.out.println("Título do filme: " + titulo);
         System.out.println("Ano de Lançamento: " + anoDeLancamento);
     }
 
-    void avalia(double nota) {
+    public void avalia(double nota) {
         somaDasAvaliacoes += nota;
         totalDeAvaliacoes++;
     }
 
-    double retornaMedia() {
+    public double retornaMedia() {
         return somaDasAvaliacoes / totalDeAvaliacoes;
     }
 
