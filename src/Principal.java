@@ -8,6 +8,7 @@ public class Principal {
         meuFilme.setTitulo("Titanic");
         meuFilme.setAnoDeLancamento(1989);
         meuFilme.setDuracaoEmMinutos(190);
+        System.out.println(meuFilme.getDuracaoEmMinutos());
 
         meuFilme.exibeFichaTecnica();
 
@@ -25,7 +26,9 @@ public class Principal {
         serie.exibeFichaTecnica();
         serie.setTemporadas(2);
         serie.setEpsPorTemporada(10);
+        serie.setMinutosPorEpisodios(50);
 
+        System.out.println("Duração da série: " + serie.getDuracaoEmMinutos());
 
     }
 }

@@ -14,7 +14,7 @@ public class Conteudo {
     public void exibeFichaTecnica() {
         System.out.println("Título do filme: " + titulo);
         System.out.println("Ano de Lançamento: " + anoDeLancamento);
-        System.out.println("A duração do filme é " + duracaoEmMinutos + " minutos");
+        System.out.println("Tempo de duração " + duracaoEmMinutos + " minutos");
     }
 
     public void avalia(double nota) {
