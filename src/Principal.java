@@ -1,4 +1,6 @@
 import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
+import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
+import br.com.alura.screenmatch.modelos.Episodio;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 
@@ -9,14 +11,15 @@ public class Principal {
         meuFilme.setTitulo("Titanic");
         meuFilme.setAnoDeLancamento(1989);
         meuFilme.setDuracaoEmMinutos(190);
-        System.out.println(meuFilme.getDuracaoEmMinutos());
+        meuFilme.setIncluidoNoPlano(true);
+        meuFilme.setDiretor("James Cameron");
 
         meuFilme.exibeFichaTecnica();
 
-        meuFilme.avalia(8);
         meuFilme.avalia(6);
-        meuFilme.avalia(9);
-        meuFilme.avalia(9);
+        meuFilme.avalia(10);
+        meuFilme.avalia(5);
+        meuFilme.avalia(7);
 
         System.out.println("Total de Avaliações: " + meuFilme.getTotalDeAvaliacoes());
         System.out.println(meuFilme.retornaMedia());
@@ -39,7 +42,17 @@ public class Principal {
         calculadora.inclui(meuFilme);
         calculadora.inclui(novoFilme);
         calculadora.inclui(serie);
-        System.out.println(calculadora.getTempoTotal());
+        System.out.println("Tempo total: " + calculadora.getTempoTotal());
+
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        filtro.filtra(meuFilme);
+
+        Episodio episodio = new Episodio();
+        episodio.setNumero(2);
+        episodio.setSerie(serie);
+        episodio.setTotalVisualizacoes(200);
+        filtro.filtra(episodio);
+
 
     }
 }
