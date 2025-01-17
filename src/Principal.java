@@ -4,6 +4,8 @@ import br.com.alura.screenmatch.modelos.Episodio;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
 
@@ -53,6 +55,21 @@ public class Principal {
         episodio.setTotalVisualizacoes(200);
         filtro.filtra(episodio);
 
+        var outroFilme = new Filme();
+        outroFilme.setTitulo("Metropolis");
+        outroFilme.setDuracaoEmMinutos(110);
+        outroFilme.setAnoDeLancamento(1930);
+        outroFilme.avalia(9);
+
+        ArrayList<Filme> listaFilmes = new ArrayList<>();
+        listaFilmes.add(outroFilme);
+        listaFilmes.add(novoFilme);
+        listaFilmes.add(meuFilme);
+
+        System.out.println("Essa lista contém: " + listaFilmes.size() + " filmes");
+        System.out.println("Primeiro filme: " + listaFilmes.get(0).getTitulo());
+        System.out.println(listaFilmes.get(0).toString());
+        System.out.println(listaFilmes);
 
     }
 }
