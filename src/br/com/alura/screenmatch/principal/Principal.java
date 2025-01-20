@@ -1,3 +1,5 @@
+package br.com.alura.screenmatch.principal;
+
 import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
 import br.com.alura.screenmatch.modelos.Episodio;
@@ -9,9 +11,9 @@ import java.util.ArrayList;
 public class Principal {
     public static void main(String[] args) {
 
-        Filme meuFilme = new Filme();
-        meuFilme.setTitulo("Titanic");
-        meuFilme.setAnoDeLancamento(1989);
+        Filme meuFilme = new Filme("Titanic", 1989);
+//        meuFilme.setTitulo("Titanic");
+//        meuFilme.setAnoDeLancamento(1989);
         meuFilme.setDuracaoEmMinutos(190);
         meuFilme.setIncluidoNoPlano(true);
         meuFilme.setDiretor("James Cameron");
@@ -26,18 +28,18 @@ public class Principal {
         System.out.println("Total de Avaliações: " + meuFilme.getTotalDeAvaliacoes());
         System.out.println(meuFilme.retornaMedia());
 
-        Serie serie = new Serie();
-        serie.setTitulo("A ordem");
-        serie.setAnoDeLancamento(2022);
+        Serie serie = new Serie("Breaking bad", 2008 );
+//        serie.setTitulo("Breaking bad");
+//        serie.setAnoDeLancamento(2008);
         serie.exibeFichaTecnica();
-        serie.setTemporadas(2);
+        serie.setTemporadas(5);
         serie.setEpsPorTemporada(10);
         serie.setMinutosPorEpisodios(50);
         System.out.println("Duração da série: " + serie.getDuracaoEmMinutos());
 
-        Filme novoFilme = new Filme();
-        novoFilme.setTitulo("Enrolados");
-        novoFilme.setAnoDeLancamento(2018);
+        Filme novoFilme = new Filme("Moana", 2016);
+//        novoFilme.setTitulo("Moana");
+//        novoFilme.setAnoDeLancamento(2016);
         novoFilme.setDuracaoEmMinutos(130);
 
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
@@ -55,10 +57,11 @@ public class Principal {
         episodio.setTotalVisualizacoes(200);
         filtro.filtra(episodio);
 
-        var outroFilme = new Filme();
-        outroFilme.setTitulo("Metropolis");
+        var outroFilme = new Filme("Metropolis", 1930);
+//        outroFilme.setTitulo("Metropolis");
+//        outroFilme.setAnoDeLancamento(1930);
+
         outroFilme.setDuracaoEmMinutos(110);
-        outroFilme.setAnoDeLancamento(1930);
         outroFilme.avalia(9);
 
         ArrayList<Filme> listaFilmes = new ArrayList<>();
@@ -66,10 +69,12 @@ public class Principal {
         listaFilmes.add(novoFilme);
         listaFilmes.add(meuFilme);
 
-        System.out.println("Essa lista contém: " + listaFilmes.size() + " filmes");
+        System.out.println("Essa lista contém " + listaFilmes.size() + " filmes");
         System.out.println("Primeiro filme: " + listaFilmes.get(0).getTitulo());
         System.out.println(listaFilmes.get(0).toString());
         System.out.println(listaFilmes);
+
+
 
     }
 }

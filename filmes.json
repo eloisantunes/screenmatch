@@ -1,0 +1,50 @@
+[
+  {
+    "Titulo": "Moana",
+    "AnoDeLancamento": 2016,
+    "IncluidoNoPlano": false,
+    "SomaDasAvaliacoes": 0.0,
+    "TotalDeAvaliacoes": 0,
+    "DuracaoEmMinutos": 107
+  },
+  {
+    "Titulo": "Titanic",
+    "AnoDeLancamento": 1997,
+    "IncluidoNoPlano": false,
+    "SomaDasAvaliacoes": 0.0,
+    "TotalDeAvaliacoes": 0,
+    "DuracaoEmMinutos": 194
+  },
+  {
+    "Titulo": "Metropolis",
+    "AnoDeLancamento": 1927,
+    "IncluidoNoPlano": false,
+    "SomaDasAvaliacoes": 0.0,
+    "TotalDeAvaliacoes": 0,
+    "DuracaoEmMinutos": 153
+  },
+  {
+    "Titulo": "Dogville",
+    "AnoDeLancamento": 2003,
+    "IncluidoNoPlano": false,
+    "SomaDasAvaliacoes": 0.0,
+    "TotalDeAvaliacoes": 0,
+    "DuracaoEmMinutos": 178
+  },
+  {
+    "Titulo": "Joker",
+    "AnoDeLancamento": 2019,
+    "IncluidoNoPlano": false,
+    "SomaDasAvaliacoes": 0.0,
+    "TotalDeAvaliacoes": 0,
+    "DuracaoEmMinutos": 122
+  },
+  {
+    "Titulo": "Spielberg",
+    "AnoDeLancamento": 2017,
+    "IncluidoNoPlano": false,
+    "SomaDasAvaliacoes": 0.0,
+    "TotalDeAvaliacoes": 0,
+    "DuracaoEmMinutos": 147
+  }
+]

@@ -6,6 +6,10 @@ public class Filme extends Conteudo implements Classificavel {
 
     private String diretor;
 
+    public Filme(String titulo, int anoDeLancamento) {
+        super(titulo, anoDeLancamento);
+    }
+
     public String getDiretor() {
         return diretor;
     }
